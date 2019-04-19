@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Space Adder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <div class="Row">
+        <div id="inputPanel" class="Column">
+            <p>input text</p>
+            <textarea id="inputText" rows="4" cols="50">put your input here</textarea>
+        </div>
+        <div id="controlPanel" class="Column controlPanel">
+            <div>
+                <div class="Control">
+                    <label>character size: </label>
+                    <input type="text" id="modIndex" value="8" />
+                </div>
+                <div class="Control">
+                    <label>Modifier Character: </label>
+                    <input type="text" id="modChar" value=" " />
+                    <label class="Warning">Leave blank for space.</label>
+                </div>
+                <div class="Control">
+                    <input type="button" id="startButton" value="Start" onclick="start();" />
+                </div>
+            </div>
+        </div>
+        <div id="outputPanel" class="Column">
+            <p>Output Text</p>
+            <textarea id="outputText" rows="4" cols="50" readonly=true></textarea>
+            <div id="binaryPanel" class="Hidden">
+                <input type="button" id="translateBinary" value="Translate to ascii?" onclick="translate();" />
+                <div id="translationPanel" class="Hidden">
+                    <p>Binary to ascii</p>
+                    <textarea id="translatedText" rows="4" cols="50" readonly=true></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

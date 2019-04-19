@@ -1,0 +1,21 @@
+.Row{
+    display: table;
+    width: 80%;
+    margin: auto;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+.Column{
+    display: table-cell;
+    text-align: center;
+}
+.Control{
+    text-align: center;
+    margin-top: 5px;
+}
+.Warning{
+    color: red;
+}
+.Hidden{
+    display: none;
+}
